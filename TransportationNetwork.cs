@@ -71,14 +71,13 @@ public partial class TransportationNetwork
         intersections = intersectionsTemp.Distinct().ToArray();
         int len = intersections.Count();
         int[,] distTemp = new int[len, len];
-        // Initialise matrix to have all values at max Int value (effectively INF)
         for (int i = 0; i < len; i++)
         {
             for(int j = 0; j < len; j++)
             {
                 if (i == j)
                 {
-                    distTemp[i, j] = 0; // distance from node to itself is always 0
+                    distTemp[i, j] = 0;
                 }
                 else
                 {
@@ -132,7 +131,6 @@ public partial class TransportationNetwork
     public bool IsConnected()
     {
         //To be completed by students
-        // Iterate through matrix and check for INF distances
         int len = intersections.Count();
         for(int i = 0; i < len; i++)
         {
@@ -162,9 +160,8 @@ public partial class TransportationNetwork
         {
             return -1;
         }
-        int startIndex = Array.FindIndex(intersections, row => row.Contains(startVertex)); //convert startVertex to index in distances array
-        int endIndex = Array.FindIndex(intersections, row => row.Contains(endVertex)); //convert endVertex to index in in distances array
-        // Utility function to calculate the index of the closest node
+        int startIndex = Array.FindIndex(intersections, row => row.Contains(startVertex));
+        int endIndex = Array.FindIndex(intersections, row => row.Contains(endVertex));
         int minDistance(int[] dist,
                     bool[] sptSet)
         {
@@ -178,22 +175,18 @@ public partial class TransportationNetwork
             return min_index;
         }
 
-
-        int[] dist = new int[len]; //keeps track of distances
-        bool[] vertSel = new bool[len]; //keeps track of verticies in path
-
-        // initialise all distances to max and verticies in path to false
+        int[] dist = new int[len];
+        bool[] vertSel = new bool[len];
         for (int i = 0; i < len; i++)
         {
             dist[i] = int.MaxValue;
             vertSel[i] = false;
         }
-
-        dist[startIndex] = 0; //distance of source from source is always 0
+        dist[startIndex] = 0; 
         for (int i = 0; i < len - 1; i++)
         {
             int u = minDistance(dist, vertSel);
-            vertSel[u] = true; //Marks selected vertex as processed to prevent infinite loops
+            vertSel[u] = true;
 
             for (int j = 0; j < len; j++)
             {
@@ -204,12 +197,12 @@ public partial class TransportationNetwork
             }
         }
         int shortestDistance = dist[endIndex];
-        if (shortestDistance == int.MaxValue) // make invalid distances return as no path as per function specification
+        if (shortestDistance == int.MaxValue)
         {
             shortestDistance = 0;
         }
 
-        return shortestDistance; //to be removed
+        return shortestDistance;
 
     }
 
