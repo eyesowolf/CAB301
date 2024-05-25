@@ -132,11 +132,12 @@ public partial class TransportationNetwork
     {
         //To be completed by students
         int len = intersections.Count();
+        int[,] connections = FindAllShortestDistances();
         for(int i = 0; i < len; i++)
         {
             for (int j = 0; j < len; j++)
             {
-                if (distances[i, j] != int.MaxValue)
+                if (connections[i, j] != int.MaxValue)
                 {
                     continue;
                 }
