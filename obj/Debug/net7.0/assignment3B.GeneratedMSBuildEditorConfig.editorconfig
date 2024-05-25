@@ -8,6 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = assignment3B
-build_property.ProjectDir = C:\Users\EYESOWOLF\OneDrive\Documents\!UNI\Assignment3 - Code-4\Assignment3 - Code\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = /Users/micah/Documents/Uni/CAB301/CAB301/

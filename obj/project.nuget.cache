@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JCWXevJ6qvuK4MzIMel4hO9WuH79yeZC9aLOWPVfiAJXHirgjBkJ0xu43yKJiwzW/NwCFa2f7u/zlj6bVqFZ4Q==",
+  "dgSpecHash": "Qi8mmlUV2yKMUvfQefDb5GVwJLwE3J5xg5a2HkWv4Zkyck3kPpUWu4M/+NWvfCIKk5rAqDrS+9DHDCba2wNHlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EYESOWOLF\\OneDrive\\Documents\\!UNI\\Assignment3 - Code-4\\Assignment3 - Code\\assignment3B.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\EYESOWOLF\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\EYESOWOLF\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\EYESOWOLF\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\EYESOWOLF\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/micah/Documents/Uni/CAB301/CAB301/assignment3B.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -71,11 +71,26 @@ public partial class TransportationNetwork
         intersections = intersectionsTemp.Distinct().ToArray();
         int len = intersections.Count();
         int[,] distTemp = new int[len, len];
+        // Initialise matrix to have all values at max Int value (effectively INF)
+        for (int i = 0; i < len; i++)
+        {
+            for(int j = 0; j < len; j++)
+            {
+                if (i == j)
+                {
+                    distTemp[i, j] = 0; // distance from node to itself is always 0
+                }
+                else
+                {
+                    distTemp[i, j] = int.MaxValue;
+                }
+            }
+        }
         foreach (String line in memFile)
         {
             string[] input = line.Split(',');
-            int xPos = Array.FindIndex(intersections, row => row.Contains(input[1]));
-            int yPos = Array.FindIndex(intersections, row => row.Contains(input[0]));
+            int xPos = Array.FindIndex(intersections, row => row.Contains(input[0]));
+            int yPos = Array.FindIndex(intersections, row => row.Contains(input[1]));
             distTemp[xPos, yPos] = int.Parse(input[2]);
         }
         distances = distTemp;
@@ -117,22 +132,20 @@ public partial class TransportationNetwork
     public bool IsConnected()
     {
         //To be completed by students
+        // Iterate through matrix and check for INF distances
         int len = intersections.Count();
         for(int i = 0; i < len; i++)
         {
             for (int j = 0; j < len; j++)
             {
-                if (distances[i,j] > 0)
+                if (distances[i, j] != int.MaxValue)
                 {
                     continue;
-                } else
-                {
-                    if (i == j) continue;
-                    else return false;
                 }
+                else return false;
             }
         }
-        return true; //to be removed
+        return true;
     }
 
     
@@ -144,10 +157,61 @@ public partial class TransportationNetwork
     public int FindShortestDistance(string startVertex, string endVertex)
     {
         //To be completed by students
-        return 0; //to be removed
+        int len = intersections.Count();
+        if (!intersections.Contains(startVertex) || !intersections.Contains(endVertex))
+        {
+            return -1;
+        }
+        int startIndex = Array.FindIndex(intersections, row => row.Contains(startVertex)); //convert startVertex to index in distances array
+        int endIndex = Array.FindIndex(intersections, row => row.Contains(endVertex)); //convert endVertex to index in in distances array
+        // Utility function to calculate the index of the closest node
+        int minDistance(int[] dist,
+                    bool[] sptSet)
+        {
+            int min = int.MaxValue, min_index = -1;
+            for (int v = 0; v < len; v++)
+                if (sptSet[v] == false && dist[v] <= min)
+                {
+                    min = dist[v];
+                    min_index = v;
+                }
+            return min_index;
+        }
+
+
+        int[] dist = new int[len]; //keeps track of distances
+        bool[] vertSel = new bool[len]; //keeps track of verticies in path
+
+        // initialise all distances to max and verticies in path to false
+        for (int i = 0; i < len; i++)
+        {
+            dist[i] = int.MaxValue;
+            vertSel[i] = false;
+        }
+
+        dist[startIndex] = 0; //distance of source from source is always 0
+        for (int i = 0; i < len - 1; i++)
+        {
+            int u = minDistance(dist, vertSel);
+            vertSel[u] = true; //Marks selected vertex as processed to prevent infinite loops
+
+            for (int j = 0; j < len; j++)
+            {
+                if (dist[u] + distances[u, j] < dist[j] && dist[u] != int.MaxValue && !vertSel[j] && distances[u, j] != 0)
+                {
+                    dist[j] = dist[u] + distances[u, j];
+                }
+            }
+        }
+        int shortestDistance = dist[endIndex];
+        if (shortestDistance == int.MaxValue) // make invalid distances return as no path as per function specification
+        {
+            shortestDistance = 0;
+        }
+
+        return shortestDistance; //to be removed
 
     }
-
 
     //Find the shortest path between all pairs of intersections
     //Precondition: transportation network plan data have been read into the system
@@ -156,6 +220,22 @@ public partial class TransportationNetwork
     public int[,] FindAllShortestDistances()
     {
         //To be completed by students
-        return null; //to be removed
+        int len = intersections.Count();
+        int[,] shortestDistMTX = new int[len, len];
+        Array.Copy(distances,shortestDistMTX,distances.Length);
+        for (int i = 0; i < len; i++)
+        {
+            for (int j = 0; j < len; j++)
+            {
+                for (int k = 0; k < len; k++)
+                {
+                    if (shortestDistMTX[j,k] > (shortestDistMTX[j,i] + shortestDistMTX[i,k]) && shortestDistMTX[i,k] != int.MaxValue && shortestDistMTX[j,i] != int.MaxValue)
+                    {
+                        shortestDistMTX[j, k] = shortestDistMTX[j, i] + shortestDistMTX[i, k];
+                    }
+                }
+            }
+        }
+        return shortestDistMTX;
     }
 }
