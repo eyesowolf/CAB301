@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{3F504B11-FC3D-41DF-A5F0-0E74F54136F9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TransportationNetwork.cs">
+    <Files>
+      <File FileName="TransportationNetwork.cs" Line="140" Column="32" />
+      <File FileName="Menu.cs" />
+      <File FileName="Program.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.assignment3B PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

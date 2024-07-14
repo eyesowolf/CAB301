@@ -1,0 +1,15 @@
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1.deps.json
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1.runtimeconfig.json
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1.dll
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1.pdb
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.csproj.AssemblyReference.cache
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.AssemblyInfoInputs.cache
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.AssemblyInfo.cs
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.csproj.CoreCompileInputs.cache
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.dll
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/refint/Assignment1.dll
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.pdb
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.genruntimeconfig.cache
+/Users/micah/Documents/Uni/CAB301/Assignment1/Assignment1/obj/Debug/net7.0/ref/Assignment1.dll

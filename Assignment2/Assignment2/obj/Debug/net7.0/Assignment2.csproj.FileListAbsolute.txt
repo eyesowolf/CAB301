@@ -1,0 +1,15 @@
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/Assignment2.csproj.AssemblyReference.cache
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/Assignment2.AssemblyInfoInputs.cache
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/Assignment2.AssemblyInfo.cs
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/Assignment2.csproj.CoreCompileInputs.cache
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/bin/Debug/net7.0/Assignment2
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/bin/Debug/net7.0/Assignment2.deps.json
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/bin/Debug/net7.0/Assignment2.runtimeconfig.json
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/bin/Debug/net7.0/Assignment2.dll
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/bin/Debug/net7.0/Assignment2.pdb
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/Assignment2.dll
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/refint/Assignment2.dll
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/Assignment2.pdb
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/Assignment2.genruntimeconfig.cache
+/Users/micah/Documents/Uni/CAB301/Assignment2/Assignment2/obj/Debug/net7.0/ref/Assignment2.dll

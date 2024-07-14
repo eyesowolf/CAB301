@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{CC4E04E8-E94A-4613-AB88-683CBA4E59B6}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assignment1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment1/MemberCollection.cs">
+    <Files>
+      <File FileName="Assignment1/IMember.cs" Line="94" Column="34" />
+      <File FileName="Assignment1/Member.cs" Line="70" Column="17" />
+      <File FileName="Assignment1/IMemberCollection.cs" Line="1" Column="1" />
+      <File FileName="Assignment1/MemberCollection.cs" Line="195" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment1" expanded="True">
+            <Node name="Assignment1" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
